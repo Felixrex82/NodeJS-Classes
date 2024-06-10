@@ -1,8 +1,8 @@
-const prompt = require("prompt-sync")()
+const prompt = require("prompt-sync")();
 
 const name = prompt("What is your Name? ")
 
-const trimName = name.trim(" ");
+const trimName = name.replace(/\s+/g, " ").trim();
 
 const usersName = trimName.split(" ");
 
@@ -13,5 +13,7 @@ const usersName = trimName.split(" ");
 let formatName = usersName.map(name => name.charAt(0).toUpperCase() + name.slice(1))
 
 console.log(formatName)
+
+
 
 
