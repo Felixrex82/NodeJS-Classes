@@ -1,7 +1,9 @@
 const prompt = require("prompt-sync")();
 
-const number = prompt("Enter any number: ")
+const input = prompt("Enter any number: ")
 
-const formatThousand = number.toLocaleString();
+const toNumber = Number(input)
+
+const formatThousand = toNumber.toLocaleString();
 
 console.log(formatThousand)
