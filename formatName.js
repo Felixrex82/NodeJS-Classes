@@ -12,7 +12,9 @@ const usersName = trimName.split(" ");
 
 let formatName = usersName.map(name => name.charAt(0).toUpperCase() + name.slice(1))
 
-console.log(formatName)
+let formattedName = String(formatName)
+
+console.log(formattedName)
 
 
 
